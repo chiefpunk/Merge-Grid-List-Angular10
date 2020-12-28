@@ -1,0 +1,10 @@
+<mat-grid-list [cols]="currentSettings.cols" [rowHeight]="rowHeight">
+  <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [rowspan]="tile.rows"
+      [colspan]="tile.cols"
+      [style.background]="tile.background"
+      (click)="onTileClicked(tile, $event)">
+    {{tile.text}}
+  </mat-grid-tile>
+</mat-grid-list>

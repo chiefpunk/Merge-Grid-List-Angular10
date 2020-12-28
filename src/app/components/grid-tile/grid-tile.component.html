@@ -1,0 +1,5 @@
+<button (click)="onClick($event)" class='button'>
+  <mat-grid-tile [colspan]="tile.cols" [rowspan]="tile.rows" [style.background]="tile.background">
+    <ng-content></ng-content>
+  </mat-grid-tile>
+</button>
